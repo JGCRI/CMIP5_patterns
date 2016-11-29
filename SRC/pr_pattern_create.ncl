@@ -77,7 +77,7 @@ begin
   iYYYY = ind(yyyymm.ge.yStrF .and. yyyymm.le.yLstF)
 
   tsi = in1->tas(iYYYY,:,:)
-  tsi = tsh -273.15
+  tsi = tsi -273.15
   tsi@units = "Celsius"
 
 ; generate weights based on latitude
