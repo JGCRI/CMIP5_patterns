@@ -16,10 +16,10 @@ You may want to change these lines:
 	Change line 15 if different temporal aggregation of pattern is wanted 
 	Change lines 19-22 if different time spans for climatology and pattern are wanted 
 	Change lines 28-30 if not CMIP files to reflect files in input directories 
-	Change lines 58-59 & 68-69 if mm/month is not prefered. Do not comment out these lines. Original units are in mm -s, which are too small for the regression equation. 
-	Change lines 98-100 if seasonal is wanted. Line 96 shows how to do this 
-	Change lines 121 & 157 if different unit is used. Change "mm/month" only. 
-	Change lines 177 & 181 if seasonal is wanted.
+	Change lines 60-61 & 70-71 if mm/month is not prefered. Do not comment out these lines. Original units are in mm -s, which are too small for the regression equation. 
+	Change lines 103-105 if seasonal is wanted. Line 101 shows how to do this 
+	Change lines 127 & 165 if different unit is used. Change "mm/month" only. 
+	Change lines 185 & 189 if seasonal is wanted.
 
 To run the script:
 
