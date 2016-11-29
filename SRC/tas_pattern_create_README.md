@@ -15,10 +15,10 @@ You may want to change these lines:
     Change line 15 if different temporal aggregation of pattern is wanted
     Change lines 19-22 if different time spans for climatology and pattern are wanted
     Change lines 27-28 if not CMIP files to reflect files in input directories
-    Change lines 57-58 & 67-68 if Kelvin is prefered. Comment out these lines with ";"
-    Change lines 89-90 if seasonal is wanted. Line 87 shows how to do this
-    Change line 112 if different different unit is used. Change "Degree C" only.
-    Change line 199 if seasonal is wanted.
+    Change lines 55-56 & 65-66 if Kelvin is prefered. Comment out these lines with ";"
+    Change lines 86-87 if seasonal is wanted. Line 84 shows how to do this
+    Change line 108 if different different unit is used. Change "Degree C" only.
+    Change lines 165 & 169 if seasonal is wanted.
 
 To run the script:
 
