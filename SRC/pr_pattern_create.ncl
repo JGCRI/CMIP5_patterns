@@ -92,7 +92,7 @@ begin
 
 ; set up output file to display model and experiment in file name
 
-  out_template = "/Volumes/LaCie/CMIP5/outtest/LSR_pr_ANN_MODEL_EXPERIMENT.nc"
+  out_template = "/Volumes/LaCie/CMIP5/outtest/PATTERN_pr_ANN_MODEL_EXPERIMENT.nc"
   outs = str_sub_str (out_template, "MODEL", model)
   outs = str_sub_str (outs, "EXPERIMENT", expt)
 
@@ -162,7 +162,7 @@ begin
   ci95 = rstdx *1.985
   copy_VarCoords(data,ci95)
   ci95@title = "95th %ile confidence interval"
-  ci95@units = "mm per TGAV"
+  ci95@units = "mm/month per TGAV"
   ci95@Tvalue = "95th significance level t-value(2-tail) for df = 95-2 = 1.985"
   ci95@method = "multiplied the LSR error term by Tvalue"
   ci95@long_name = "rstdx from LSR * 95th significance level t-value for df = 95-2"
@@ -173,30 +173,6 @@ begin
   delete(coef@rstd)
   delete(coef@yintercept)
   delete(coef@tval)
-
-; regrid to T85 and set lat/lon attributes
-
-  newlat = flt2dble(fspan(-90,90,192))
-  newlat@units = "degrees_north"
-  newlat@standard_name = "latitude" ;
-  newlat@long_name = "latitude" ;
-  newlat@axis = "Y" ;
-  newlat@units = "degrees_north" ;
-  newlat@bounds = "lat_bnds" ;
-
-  newlon = flt2dble(fspan(0,360,288))
-  newlon@units = "degrees_east"
-  newlon@standard_name = "longitude" ;
-  newlon@long_name = "longitude" ;
-  newlon@axis = "X" ;
-  newlon@units = "degrees_east" ;
-  newlon@bounds = "lon_bnds" ;
-
-  rgclimo = linint2_Wrap(climo&lon,climo&lat,climo,True,newlon,newlat,0)
-  rgcoef = linint2_Wrap(coef&lon,coef&lat,coef,True,newlon,newlat,0)
-  rgr2 = linint2_Wrap(r2&lon,r2&lat,r2,True,newlon,newlat,0)
-  rgrstdx = linint2_Wrap(rstdx&lon,rstdx&lat,rstdx,True,newlon,newlat,0)
-  rgci95 = linint2_Wrap(ci95&lon,ci95&lat,ci95,True,newlon,newlat,0)
 
 ; define metadata of output
 
@@ -214,7 +190,6 @@ begin
   out@NCL_function2 = "wgt_areaave (weighted area average)"
   out@NCL_function3 = "regCoef (LSR regression)"
   out@Lat_weights = "sqrt(cos(rad*lat))"
-  out@regridding = "output was regridded to T85 (/192,288/)"
   out@editor = editor
   out@editor_locale = editor_locale
   out@forcing = expt
@@ -231,13 +206,13 @@ begin
   delete(out@original_name)
   delete(out@coordinates)
 
-  out->pattern = rgcoef
-  out->CI95 = rgci95
-  out->r2 = rgr2
-  out->error = rgrstdx
-  out->climatology = rgclimo
+  out->pattern = coef
+  out->CI95 = ci95
+  out->r2 = r2
+  out->error = rstdx
+  out->climatology = climo
 
-  delete([/name,out_template,outs,out,nitems,name2,model,expt,time,yyyymm,iYYYY,tsh,tspi,tsi,atsh,atspi,atsi,Tgav,climo,data,global_attnames,coef,lat,lon,clat,nlat,nlon,rstdx,ci95,r2x,r2,rgclimo,rgcoef,rgr2,rgrstdx,rgci95/])
+  delete([/name,out_template,outs,out,nitems,name2,model,expt,time,yyyymm,iYYYY,tsh,tspi,tsi,atsh,atspi,atsi,Tgav,climo,data,global_attnames,coef,lat,lon,clat,nlat,nlon,rstdx,ci95,r2x,r2/])
 
   end do
 
