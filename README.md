@@ -4,7 +4,7 @@ This repository contains a library of temperature and precipitation patterns gen
 [](https://github.com/JGCRI/CMIP5_patterns/blob/master/SRC/SCHEMATIC.pdf)
 [https://github.com/JGCRI/CMIP5_patterns/blob/master/SRC/SCHEMATIC.pdf]
 
-
+![](https://github.com/JGCRI/CMIP5_patterns/blob/master/SRC/SCHEMATIC.pdf)
 
 All source code used to produce these patterns is found [here](https://github.com/JGCRI/CMIP5_patterns/tree/master/SRC). Individual temperature and precipitation patterns in a .nc file are found [here](https://github.com/JGCRI/CMIP5_patterns/tree/master/DATA).
 
