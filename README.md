@@ -30,7 +30,9 @@ The purpose of creating this pattern library was to allow for researchers across
 
 2.  The adjusted r^2 between the TG and TL (2-D); 
 
-3.  The regression error term (2-D), which can be used to construct a residual time series;
+3.  The regression error term (2-D);
+
+  *which can be used to construct a residual time series
 
 4.  A historical climatology based on the 1960-1999 average (2-D); 
 
