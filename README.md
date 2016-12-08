@@ -32,9 +32,13 @@ The purpose of creating this pattern library was to allow for researchers across
 
 3.  The regression error term (2-D), which can be used to construct a residual time series;
 
-4.  A historical climatology based on the 1960-1999 average (2-D), which can be used to construct absolute temperature at time X  (SHOULD INCLUDE A SHORT NOTATION OF ABSOLUTE CHANGE = climo +(pattern * scaler (at time X)));
+4.  A historical climatology based on the 1960-1999 average (2-D); 
 
-5.  The 95th percentile confidence level pattern, which can be used to calculate the 95th and 5th confidence intervals (SHOULD INCLUDE A SHORT NOTATION OF UPPER/LOWER CI = (pattern +/- 95thile) *scaler). 
+  *which can be used to construct absolute temperature at time X 
+
+5.  The 95th percentile confidence level pattern. 
+
+  *which can be used to calculate the 95th and 5th confidence intervals
 
 All source code used to produce these patterns is found [here](https://github.com/JGCRI/CMIP5_patterns/tree/master/SRC). Individual temperature and precipitation patterns in a .nc file are found [here](https://github.com/JGCRI/CMIP5_patterns/tree/master/DATA).
 
