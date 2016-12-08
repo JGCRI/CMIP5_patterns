@@ -18,10 +18,13 @@ Those patterns can then be "scaled" by a global temperature change obtained from
 The least squared regression (LSR) patterns are calculated from future forcing scenarios only.  
 
 ####**LSR equation**:
+var md = require('markdown-it')();
 
-\begin{equation}
-*TL* = $\alpha$ + $\beta$ * *TG* + $\epsilon$
-\end{equation}
+md.use(require("./node_modules/markdown-it-asciimath/index.js"));
+
+
+*TL* = \alpha + \beta * *TG* + \epsilon
+
 
 *TG* is the global mean surface temperature time series (one-dimensional, unsmoothed), and *TL* is the gridded time series (three dimensional).  $\beta$  is a two-dimensional field of regression slopes, and $\epsilon$ is a two-dimensional residual term (error) stemming from linearly fitting the dependent variable to the predictor.  $\alpha$ is the $y$-intercept, which we take to be 0 by only computing change, not absolute temperature. 
 
