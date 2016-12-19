@@ -34,7 +34,7 @@ The purpose of creating this pattern library was to allow for researchers across
 
 1.  The individual model pattern (2-D);
 
-2.  The adjusted r^2 between the TG and TL (2-D); 
+2.  The adjusted r^2 between the independent and dependent terms (2-D); 
 
 3.  The regression error term (2-D);
 
@@ -42,7 +42,7 @@ The purpose of creating this pattern library was to allow for researchers across
 
 4.  A historical climatology based on the 1960-1999 average (2-D); 
 
-  *which can be used to construct absolute temperature at time X 
+  *which can be used to construct absolute values at time X 
 
 5.  The 95th percentile confidence level pattern. 
 
