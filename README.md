@@ -34,7 +34,7 @@ The purpose of creating this pattern library was to allow for researchers across
 
 1.  The individual model pattern (2-D);
 
-2.  The adjusted r^2 between the independent and dependent terms (2-D); 
+2.  The adjusted r^2 between the predictor and dependent terms (2-D); 
 
 3.  The regression error term (2-D);
 
