@@ -18,9 +18,9 @@ Those patterns can then be "scaled" by a global temperature change obtained from
 The least squared regression (LSR) patterns are calculated from future forcing scenarios only.  
 
 ####**LSR equation**:
-var md = require('markdown-it')();
+%var md = require('markdown-it')();
 
-md.use(require("./node_modules/markdown-it-asciimath/index.js"));
+%md.use(require("./node_modules/markdown-it-asciimath/index.js"));
 
 
 *TL* = \alpha + \beta * *TG* + \epsilon
