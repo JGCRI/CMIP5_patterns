@@ -8,7 +8,7 @@ This repository contains a library of temperature and precipitation patterns gen
 
 Coordinated climate model experiments are bound by a limited number of possible forcing scenarios, which makes exploring uncertainties in climate projections difficult. In the absence of a large sample of model experiments to draw upon, extrapolation outside of the range of projections, as well as interpolation between scenarios can be used to reduce uncertainty from future forcing by spanning a much larger range of emission scenarios.  One such computationally efficient method to explore many different future forcing scenarios scaled from general circulation models (GCMs) is called 'pattern scaling' (Santer, 1990; Mitchell et al, 1999). 
 
-Under the assumption that a climate variable scales propotionally with global mean temperature change, a "pattern" (the statistical relationship between a climate variable and global mean temperature) can be derived from any GCMs.
+Under the assumption that a climate variable scales propotionally with global mean temperature change, a "pattern" (the statistical relationship between a climate variable and global mean temperature) can be derived from any GCM.
 Those patterns can then be "scaled" by a global temperature change obtained from a simple climate model (SCM) to span a wide range of future scenarios that may not have been simulated by full GCMs.
 
 ![](https://github.com/JGCRI/CMIP5_patterns/blob/master/IMAGES/FLOWCHART_PS.png)
