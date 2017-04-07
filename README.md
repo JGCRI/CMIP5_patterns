@@ -50,8 +50,6 @@ The purpose of creating this pattern library was to allow for researchers across
 
 All source code used to produce these patterns is found [here](https://github.com/JGCRI/CMIP5_patterns/tree/master/SRC). Individual temperature and precipitation patterns in a .nc file are found [here](https://github.com/JGCRI/CMIP5_patterns/tree/master/DATA).
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.235905.svg)](https://doi.org/10.5281/zenodo.235905)
-
 ###**References**:
 
 TBA
