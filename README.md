@@ -54,6 +54,6 @@ All source code used to produce these patterns is found [here](https://github.co
 
 ###**References**:
 
-TBA
+Lynch, C., Hartin, C., Bond-Lamberty, B., and Kravitz, B.: An open-access CMIP5 pattern library for temperature and precipitation: Description and methodology, Earth Syst. Sci. Data Discuss., doi:10.5194/essd-2016-68, in review, 2017. 
 
 This work is supported by the [Integrated Assessment Research Program](http://science.energy.gov/ber/research/cesd/integrated-assessment-of-global-climate-change/) of the Office of Science, U.S. Department of Energy. The Pacific Northwest National Laboratory is operated for DOE by Battelle Memorial Institute under contract DE-AC05-76RL01830.
