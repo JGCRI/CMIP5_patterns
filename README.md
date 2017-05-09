@@ -38,8 +38,6 @@ The purpose of creating this pattern library was to allow for researchers across
 
 3.  The regression error term (2-D);
 
-  *which can be used to construct a residual time series
-
 4.  A historical climatology based on the 1960-1999 average (2-D); 
 
   *which can be used to construct absolute values at time X 
@@ -55,5 +53,7 @@ All source code used to produce these patterns is found [here](https://github.co
 ###**References**:
 
 Lynch, C., Hartin, C., Bond-Lamberty, B., and Kravitz, B.: An open-access CMIP5 pattern library for temperature and precipitation: Description and methodology, Earth Syst. Sci. Data Discuss., doi:10.5194/essd-2016-68, in review, 2017. 
+
+Kravitz, B., Lynch, C., Hartin, C., and Bond-Lamberty, B.: Exploring precipitation pattern scaling methodologies and robustness among CMIP5 models, Geosci. Model Dev. Discuss., doi:10.5194/gmd-2016-258, in review, 2016. 
 
 This work is supported by the [Integrated Assessment Research Program](http://science.energy.gov/ber/research/cesd/integrated-assessment-of-global-climate-change/) of the Office of Science, U.S. Department of Energy. The Pacific Northwest National Laboratory is operated for DOE by Battelle Memorial Institute under contract DE-AC05-76RL01830.
